@@ -1,0 +1,14 @@
+D:\myproj\posproject2\POS\netoaster\bin\Release\netoaster.dll
+D:\myproj\posproject2\POS\netoaster\bin\Release\netoaster.pdb
+D:\myproj\posproject2\POS\netoaster\obj\Release\ToasterWindow.g.cs
+D:\myproj\posproject2\POS\netoaster\obj\Release\GeneratedInternalTypeHelper.g.cs
+D:\myproj\posproject2\POS\netoaster\obj\Release\netoaster_MarkupCompile.cache
+D:\myproj\posproject2\POS\netoaster\obj\Release\netoaster_MarkupCompile.lref
+D:\myproj\posproject2\POS\netoaster\obj\Release\Themes\Generic.baml
+D:\myproj\posproject2\POS\netoaster\obj\Release\ToasterWindow.baml
+D:\myproj\posproject2\POS\netoaster\obj\Release\netoaster.g.resources
+D:\myproj\posproject2\POS\netoaster\obj\Release\netoaster.Properties.Resources.resources
+D:\myproj\posproject2\POS\netoaster\obj\Release\netoaster.csproj.GenerateResource.cache
+D:\myproj\posproject2\POS\netoaster\obj\Release\netoaster.csproj.CoreCompileInputs.cache
+D:\myproj\posproject2\POS\netoaster\obj\Release\netoaster.dll
+D:\myproj\posproject2\POS\netoaster\obj\Release\netoaster.pdb
