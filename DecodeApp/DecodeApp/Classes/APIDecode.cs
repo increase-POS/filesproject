@@ -543,8 +543,8 @@ namespace DecodeApp.Classes
             var    decrp = DeCompressThenDecrypt(restorearr);
                 var jwtToken = new JwtSecurityToken(decrp);
                 IEnumerable<Claim> claims = jwtToken.Claims;
-                claims.ToString();
-                //var validAuth = claims.Where(f => f.Type == "scopes").FirstOrDefault();
+                //   claims.ToString();
+                //var validAuth = claims.Select(x => new { x.Type,x.Value  }).ToList();
                 //      
                 //restorearr = JsonConvert.SerializeObject(validAuth);
                 restorearr = JsonConvert.SerializeObject(claims);

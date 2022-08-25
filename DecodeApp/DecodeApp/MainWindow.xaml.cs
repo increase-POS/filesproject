@@ -41,6 +41,7 @@ namespace DecodeApp
                 new { Text = "Decode API File", Value = "APIFile" },
                 new { Text = "Decode Backup File", Value = "backupFile" },
                 new { Text = "Decode Error File", Value = "errorFile" },
+                new { Text = "Decode Activation File", Value = "activeFile" },
                  };
                 cb_type.DisplayMemberPath = "Text";
                 cb_type.SelectedValuePath = "Value";
@@ -154,6 +155,36 @@ namespace DecodeApp
                         }
                     }
                 }
+                else if (cb_type.SelectedValue.ToString() == "activeFile")
+                {
+                    ReportCls rc = new ReportCls();
+                    bool res = false;
+                    string sourcPath = "";
+                 openFileDialog.Filter = "File|*.ac";
+                    openFileDialog.Title = "The Activation File";
+                    if (openFileDialog.ShowDialog() == true)
+                    {
+                        sourcPath = openFileDialog.FileName;
+                    }
+                    saveFileDialog.Filter = "File|*.txt;";
+                    if (saveFileDialog.ShowDialog() == true)
+                    {
+                        string Destpath = saveFileDialog.FileName;
+                        saveFileDialog.Title = "The text File";
+                        res = rc.decodefile(sourcPath, Destpath);
+                        // rc.DelFile(pdfpath);
+                        //  rc.decodefile(DestPath,@"D:\error.xls");
+                        if (res)
+                        {
+                            Toaster.ShowSuccess(Window.GetWindow(this), message: "Success", animation: ToasterAnimation.FadeIn);
+                        }
+                        else
+                        {
+                            Toaster.ShowWarning(Window.GetWindow(this), message: "Not complete", animation: ToasterAnimation.FadeIn);
+                        }
+                    }
+                }
+
                 //MessageBox.Show("Hello, you select to decode file type: " + cb_type.SelectedValue);
                 #endregion
 
